@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Stopwatch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/PROGRAMNAME",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "preLaunchTask": "build-debug"
+        }
+    ]
+}
