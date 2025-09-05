@@ -33,7 +33,7 @@ INSTALL_DIR ?= ~/bin
 
 # Source, Header and Object files
 SRCS = $(wildcard $(SRC_DIR)/*.cpp) $(wildcard $(SRC_DIR)/*.c)
-HDRS = $(wildcard $(HDR_DIR)/*.hpp) $(wildcard $(HDR_DIR)/*.h)
+HDRS = $(wildcard $(HDR_DIR)/*.hpp) $(wildcard $(HDR_DIR)/*.h) $(wildcard $(SRC_DIR)/*.hpp) $(wildcard $(SRC_DIR)/*.h)
 OBJS = $(addprefix $(BUILD_DIR)/, $(addsuffix .o, $(notdir $(basename $(SRCS)))))
 ASMS = $(addprefix $(BUILD_DIR)/asm/, $(addsuffix .s, $(notdir $(basename $(SRCS)))))
 DOTI = $(addprefix $(BUILD_DIR)/preprocessed/, $(addsuffix .ii, $(notdir $(basename $(SRCS)))))
